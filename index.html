@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Include jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Your custom scripts -->
+    <script>
+      function showDropdown(element) {
+          element.classList.add('show');
+      }
+
+      function hideDropdown(element) {
+          element.classList.remove('show');
+      }
+    </script>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <!-- Your custom stylesheets -->
+    <link rel="stylesheet" href="CSS_files/Google_fonts.css"/>
+    <link rel="stylesheet" href="CSS_files/style.css"/>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light header-styling nav-hover">
+          <div class="site-tit-des">
+            <a href="#home-section" class="site-title">Patrick Nelson</a>
+            <p class="site-description">Faculty/Department of Mathematics</p>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav d-flex justify-content-center ml-auto site-nav-ele">
+              <li class="nav-item active mr-2" id="nav-li-home">
+                <a class="nav-link" id="home-link" href="#home-section" data-toggle="dropdown">HOME</a>
+              </li>
+              <li class="nav-item dropdown mr-2" id="nav-li-research" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+                <a class="nav-link dropdown-toggle" id="research-link" href="#research-section" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  RESEARCH
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="Images/Nelson-CV-2023.pdf">CV</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mr-2" id="nav-li-teaching">
+                <a class="nav-link" id="teaching-link" href="#teaching-section" aria-haspopup="true" role="button" data-toggle="dropdown" aria-expanded="false">TEACHING</a>
+              </li>
+              <li class="nav-item mr-2" id="nav-li-news">
+                <a class="nav-link" id="news-link" href="#news-section" data-toggle="dropdown">GRANTS</a>
+              </li>
+              <li class="nav-item mr-2" id="nav-li-mentorship">
+                <a class="nav-link" id="mentorship-link" href="#mentorship-section" data-toggle="dropdown">MENTORSHIP</a>
+              </li>
+              <li class="nav-item mr-2" id="nav-li-about-me">
+                <a class="nav-link" id="about-me-link" href="#about-me-section" data-toggle="dropdown">ABOUT ME</a>
+              </li>
+            </ul>
+          </div>
+      </nav>  
+      <div class="site-content">
+        <div class="primary-home-content" id="home-section">
+          <h1 class="welcome-heading">Welcome</h1>
+          <div class="entry-post-para">
+            <a href="Images\IMG_4666.jpg" class="a-prof-image"><img class="prof-image" src="Images\IMG_4666.jpg" alt=""></a>
+            <div class="entry-para">
+              <p><strong>MATHEMATICAL</strong> <strong>RESEARCH</strong></p>
+              <p>Dr. Patrick Nelson is a nationally recognized scholar and educator.  He served as Chair of the Mathematics and Computer Science Department from 2016 to 2023 and in January of 2023 became the Interim Dean of the College of Arts and Sciences. Dr. Nelson is a Mathematical Biologist whose area of expertise is in the mathematical modeling of infectious diseases and diabetes.  He has served on the Board of Directors for the Society of Mathematical Biology and continues to serve as the President of the Board for the Cornerstone Jefferson Douglas Academy in Detroit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="primary-home-content" id="research-section">
+          <div class="entry-para">
+            <h1 class="welcome-heading">Research</h1>
+            <p>My research focuses on the application of mathematics, statistics and computational analysis to study biological systems, engineering, and medical diseases. I utilized concepts from calculus to dy namical systems to functional analysis of delay di↵erential equations. The biological topics include cell biology, ecology, cancer, infectious disease, diabetes, cardiac perfusion, immunology, pattern formation, bioinformatics, and developmental biology. I have also spent a great deal of time re searching topics in Engineering, including machine tooling, chatter, and automotive systems. In all cases, the driving force is the Science. I directed (PI) an NSF funded UBM program (SUBMERGE) at UM. This program is responsible for exposing undergraduate students to high level research in the early stages of their careers. We accepted between 4 - 8 students a year and design a one to two year training program that provides students with not only graduate level research but also gives them educational opportunities to learn how to teach. LTU’s CRE program can become something similar to this UBM and one of my goals will be to create a strong, interdisciplinary research pro gram for faculty in all disciplines in the CoAS and eventually use this to acquire our own UBM. One goal will be to train faculty to become top-notch interdisciplinary scientists and to create a regional center for computational and mathematical biology. In addition, a goal is to obtain funding for an interdisciplinary center, based on computer science and mathematics with applications to medicine, psychology, social networks, and other science and engineering. In addition to this more traditional research, we are entering a new era where techniques from computer science, such as Machine Learning and Artificial Intelligence can lead to the breakthroughs in Medicine that can define cures of Cancer, Diabetes and other nasty diseases. 
+            </p>
+            <p>My area of expertise is dynamical systems and computational biology. When mathematically characterizing diseases such as HIV or Diabetes, it is often necessary to use delay-di↵erential equa tions. Time delays, for example, allow one to account for the time lag between viral contact on a cell surface and the integration of the virus into the cellular DNA without explicitly needing a detailed set of di↵erential equations. They can also represent the time lag between pancreatic activity and a person’s blood glucose levels as determined from the finger prick method or from continuous glucose monitoring devices. In both cases, modeling with time delays allows us to focus on other dynamics of the problem. I am developing novel ways to study these dicult equations. A properly derived mathematical model must be built with a solid biological foundation. One should not build or modify a model based on their limited knowledge of or ability to handle the mathematical theory. Therefore, the main reason for my work on the theory of delay di↵erential equations is to foster its application to models of human diseases. 
+            </p>
+            <p>On the other hand, some of our recent high impact work has shown that by utilizing simple concepts from calculus and linear algebra we can provide researchers and clinicians with critically needed information that can be used to improve treatment of patients with Diabetes. This again shows that my research is driven by Science and not limited by mathematical comfortability.</p>
+            <h4>1 Diabetes</h4>
+            <a href="Images\Diabetes.png"><img class="prof-image" src="Images\Diabetes.png" alt=""></a>
+            <p>Mathematical models and new experimental platforms have played key roles in major biomedical discoveries. We recently developed the CGM-GUIDE (Continuous Glucose Monitoring) Graphical
+            User Interface for Diabetes Evaluation) that provides researchers and clinicians with a superior assessment of a patients glucose landscape. The interface calculates and displays multiple metrics from inputted CGM data, o↵ering not only a multifaceted approach to studying glucose variability, but also a means to investigate variability with more information-rich data sets. In this manner, the CGM-GUIDE assists clinicians and researchers to make more integrated assessments about the relationship between glucose variability and the development of diabetes complications. In the clinic, the CGM-GUIDE can provide information useful for the management and treatment of the disease, specifically targeted to limiting the amount of time spent in hyper- or hypo- glycemia or predicting the chances of future complications in the patient. HbA1c (Hemoglobin A1c) is currently a standard used in the clinical treatment of subjects with Diabetes. It provides information about the average levels of glucose concentration in patients over a prolonged period of time. However, it can be shown that two patients with similar HbA1c values can have widely varying glucose variability over the same period of time, including time spent in hyper- and/or hypo- glycemia. Patients who spend more time in these adverse ranges are more susceptible to complications, both acute and long term, and it is of critical importance to be able to minimize the amount of time spent there. Along with the CGM-GUIDE, we are working to develop new metrics and assess the growing number of other metrics presented in literature that may assist in reducing acute compli cations caused by glucose levels dipping into the hypoglycemic ranges. One must be judicious in regard to studying these metrics and determining which combinations can provide the most optimal predictor of long-term complications. Our metric provides information that supplements HbA1c and provides clinicians with a powerful tool in the fight against this disease. My lab is working to modify and fine-tune our computational algorithm using secondary data, defined with new metrics, and apply it to newly acquired CGM data from patients in the clinic. Data will be collected that measure glucose levels on 5-minute intervals as well as daily HbA1c levels. This data will be utilized to support the following research topics. All of these topics are perfect for providing new research opportunities for faculty at LTU similar to what is being done with Dr. Anyaiwe</p>
+            <ol>
+              <li>To continue the development of cutting-edge computational algorithms with novel metrics based soundly on statistical measures of secondary CGM data that can be easily translated to the clinic to help manage patient’s glucose fluctuations. The goal of this AIM is to provide clinicians with a practical tool in their fight against Diabetes. As the use of CGMs becomes more prevalent in the management of diabetes, metrics for interpreting and connecting CGM data to clinical com plications, such as kidney failure, diabetic retinopathy, peripheral neuropathy, stroke, and cardio vascular disease, are essential for the most e↵ective use of CGMs in long-term clinical care. Suc cessful application of our tools will provide a supplement to HbA1c that may assist in predicting and hopefully limiting future complications. CGM-GUIDE is being developed to predict which patients have a higher risk for complications and hence would require a di↵erent level of monitoring and treatment. 
+              </li>
+              <li>To implement a web-based interface and a public, usable database that allows scientist and clinicians easy access to our algorithms and metrics, hence enhancing their ability to treat patients. The goal of this AIM is to provide researchers with a tool that is easily accessible in the clinic or lab that provides critical information as to the dynamics of the CGM data. The web-based interface will provide clinicians a visually pleasing display of critical information of glucose variability, which in turn will provide important information as to the patientOs chance of future complications. ˜ Clinicians will not easily adapt to computational methods and so it will be an exciting challenge to create an interface that clinicians will readily accept as normal for treating patients. Dr. Pop-Busui will implement this technology in her clinic. The database will be created and managed to provide
+              </li>
+              <li>To develop similar algorithms that will function with finger-prick data. There is ample data available of patients who track their glucose levels using the finger-prick method. While this data is more abundant then CGM data, it is also much more sparse, with measurement times occurring only infrequently throughout the day. Similar to the CGM-GUIDE, the SMBG-GUIDE (Self-Monitoring of Blood Glucose: A Graphical User Interface for Diabetes Evaluation) will pro vide a user -friendly interface that will allow for the calculation and assembly of metrics that are commonly used to assess diabetes management. When provided with a self-monitored blood glu cose profile, the SMBG-GUIDE will output metrics such as ADRR, MAGE, standard deviation of glucose, M-Value, and J-Index, in addition to various graphical depictions of the glucose profile. The SMBG-GUIDE will also provide warnings when the data is insucient to provide an accurate or meaningful result for a metric. The SMBG-GUIDE also introduces a variation of transition density profile tailored for sparse data. This tool will allow for better exploration of the e↵ect that self-monitored blood glucose variability has on diabetic outcomes. Additionally, it can also be used in a non-research setting to help diabetic individuals with health management by making these metrics easily accessible. 
+              </li>
+            </ol>
+            <p>In collaboration with Dr. Pietropaolo, an expert on T1DM we have also developed mathemat ical models in an e↵ort to quantify the influence of regulatory T cells (Treg) on Type 1 diabetes progression and are working on a new models to examine beta cell function and resilience. A num ber of studies demonstrated that any approach aiming at achieving immune hyporesponsiveness or tolerance in established Type 1 diabetes will have to address the beta cell mass and function remain ing at the time of clinical diagnosis of diabetes to permit a recovery of a metabolically-functional mass over the long-term. This suggestion is not without precedent as many studies clearly show a cytokine-dependent inhibition of beta cell function. For the first time, we have the unique opportu nity to use mathematical model that can take into account regulatory T cells and pancreatic beta cell function. This model might yield novel clues into the pathogenesis of Type 1 diabetes. Mathe matical modeling has played a critical role in our understanding of various biological problems such as infectious diseases, Cancer , Cardiac arrhythmias, and Diabetes. The modeling of diabetes to this point has focused mostly on insulin-glucose dynamics and only recently has modeling begun to explore the specific pathogenesis of the disease, such as the e↵ects of regulatory T cells and beta-cell destruction. Our group is in a great position to pioneer some novel mathematical models for Diabetes that will lead to advances in the understanding of the dynamics of this disease. </p>
+            <h4>2 HIV: Funded through a Career Award from the Burroughs Wellcome Foundation 
+            </h4>
+            <a href="Images\HIV_image.png"><img class="prof-image" src="Images\HIV_image.png" alt=""></a>
+            <p>Understanding how the HIV-1 virus actively diminishes the immune system’s capability of response, and HIV-1’s ability to mutate, which ultimately leads to drug therapy failure, are arguably some of the most important infectious disease problems of the 21st century. In fact, while researchers worldwide are actively combating this disease, we still lack an understanding of many of the funda mental properties of its pathogenesis. My research has focused on developing several mathematical models that account for many stages of the HIV-1 infection process. My mathematical models of the dynamics of HIV-1 infection have already assisted in determining many quantitative features of
+              the interaction between HIV-1 and the immune response. Our results have provided quantitative support to several new hypotheses about the disease. Some of our earlier work has focused on the use of models which account for intracellular delays in the infection process and have shown that this more accurate representation of the cell biology substantially changes the estimates of the death rate of productively infected T cells, , and the viral clearance rate, c. We have shown that the previously reported values for  were underestimated by nearly 23% and then showed quantitatively how the average life span of infected T cells is partitioned between infected but not producing virus and productively infected. Also, we have shown that the levels of drug e↵ectiveness in patients on antiviral therapy can be as low as 70%, which implies the need of better drug therapies. 
+            </p>
+            <p>Recently, we have begun to tackle questions relating to how the immune system can be both bad and good for the virus. Although the dynamics of CD4+ and CD8+ cells have been well characterized, in HIV infection, there is currently a lack of understanding concerning the role of regulatory T-cells, or Tregs in viral dynamics. Tregs are a class of CD4+ cells which limit the activation and expansion of immune cells, including autoreactive CD4+ cells and CD8+ cells. These cells main responsibility is to police the immune system and arrest any cells that are not working properly. Initial studies provided evidence that the Treg response to HIV was beneficial, limiting immune exhaustion and immune-mediated tissue damage. Conversely, Tregs have been observed to contribute to the onset of immune dysfunction and to prevent a successful immune response. Finally, there is evidence that the role of Tregs throughout infection may follow a more dynamic behavior, changing its behavior at di↵erent stages of infection. Divergent reports on Treg activity can be attributed in part to experimental obstacles involved in studying their dynamics in vivo. Patient data for Tregs are largely non-existent due to the absence of accurate surface markers to characterize the population. Without selective markers, computational modeling is paramount in providing insight into T-cell regulation during HIV infection, specifically examining adaptive Treg behavior. To further exacerbate the experimental problem in HIV infection, there is evidence that multiple subsets of Tregs exist: normal Tregs, as well as a HIV-specific adaptive. Normal Tregs (nTreg), the body’s naturally occuring regulatory T-cells, are present in the early stages of infection, but through some unknown mechanism, HIV may adapt the activity of nTregs, to the benefit of the virus; this modified class of Tregs is deemed adaptive Tregs (aTreg). 
+            </p>
+            <p>Adaptive Tregs are believed to be deleterious for the patient by contributing to viral proliferation and poor immune activity. Although there are no known markers for adaptive Tregs, their existence may have a distinct e↵ect on HIV dynamics. To study this problem we developed a new model for HIV includes both nTregs and aTregs, matching simulations to patient data and constructed an understanding of whether the two subsets could biologically exist together with di↵ering e↵ects. Our model focuses on the e↵ect Tregs have on sharply declining viral load during acute infection and the examination of the importance of CD8+ activation and CD4+ population limitation as well as its subsequent steady state levels during latency. Through data fitting, the model was initially tested to ensure normal viral behavior could be replicated. Consistent with previous fits, two main behaviors were observed - oscillatory as well as steady state dynamics. The model was capable of reproducing the acute viral infection and proceeding either to steady state or damped oscillations. Comparing our fits to a previously published study (Cuipe et. al), lacking normal and adaptive regulatory T-cells, reveals that similar dynamics could be obtained through the inclusion of a regulatory T cell population. Notably, Treg fits showed improvements in simulating e↵ector cell populations, within the first few weeks of infection, compared to previous models (Fig. 1b,d). Previous drops in e↵ector cell populations, associated with the viral peak, were minimized through the new model, giving a more biologically relevant depiction of e↵ector cells. Our fits can additionally be seen to accord more closely to physiological ranges for e↵ector cells; however, it must be noted that both models do not entirely fit within physiologically determined ranges, largely due to the initial
+              conditions and also limits visible in both models. We believe these improvements are due to the usage of dual equations modeling the e↵ector cell population. Through compartmentalization of e↵ector cells into immature and mature populations, we were able to avoid sharp drops in these cells during acute infection and construct a method of modeling e↵ector populations within realistic physiological bounds. 
+            </p>
+            <p>My research has advanced our understanding of HIV dynamics, however, new opportunities are available due to Covid-19 and other newly defined infectious diseases. Work has already been done with Drs Pell and Johnston leading to recent publications and this is only the beginning of oppor tunities that I can provide to faculty in all departments in the CoAS. All of these opportunities, I want to comment are perfect topics for quality undergraduate and graduate students to work on. 
+            </p>
+            <ol>
+              <li>What causes the gradual depletion of CD4+ T-cells during latency? Recently experimental work on regulatory T cells, a CD4+ subset of T cells, has been implicated as a possible mechanism for this gradual decline. Other work has suggested that these cells are highly vulnerable to HIV infection. With all the varieties of interdependent cells that regulate and protect the body during infection, mathematical modeling is key to providing a road map to understanding the immune systemOs response to infection. ˜ 
+              </li>
+              <li> How can we optimize drug therapy by minimizing viral mutation and maximizing drug e↵ec tiveness? HIV drug resistance results possible from a combination of three factors; HIV diversity, HIV replication, and HIV selection. Advances in understanding the HIV genome, such as HIV nef and HIV rev, two specific genes that mutate to give an advantage to HIV replication, can now be applied to mathematical modeling to predict outcome. By predicting mutation ahead of time, one can better prescribe drug therapy that in the long run minimizes the total amount of mutations. Recent advances in modeling using control theory, model selection and identifiability, makes this area ripe for new interactions.</li>
+            </ol>
+            <p>Many researchers, including my self, were trying to make biological conjectures based on the given model. In many of these papers, researchers argued over the importance of a variety of biological e↵ects as well as for the inclusion or exclusion of the corresponding representations in their mathematical models. Following our publications of additional and/or alternative compartment formulations including the use of delay di↵erential equations (DDEs) in modeling the eclipse phase much debate was generated on the correctness of the model. The knowledge gained from using models of disease pathogenesis has, in many cases, suggested novel design ideas for treatment strategies as well as laboratory experiments. My research on HIV now focuses on how confident we are with these models and my methods can be seen in a recently favorably reviewed paper for PLOS ONE on regulator T cells and HIV. The models are making profound impacts on the understanding of the disease and I wanted to make sure we were correct. Hence, my group now addresses model identifiability, model selection and model sensitivity. Issues highly important to understanding our models and hence understanding their impact on HIV and other diseases.</p>
+            <p>For example, in many of the these earlier works, the viral clearance rate was identified by mod eling the disease pathogenesis with a system of deterministic di↵erential equations, numerically calculating a solution, and then fitting the results with plasma viral load data (using a ordinary least squares (OLS) approach). Two statistical issues rarely considered when studying disease pathogenesis using dynamical systems are the modeling of variability within and between individu als as well as the estimation of statistical evidence for the superiority of one model over others. My group then began to focus on this topic. We began to employ hierarchical nonlinear mixed-e↵ects (NLME) modeling approach to address the first issue and model selection criteria for the second.
+            </p>
+            <p>Little work has been done on this topic until we published our first paper on ”Model selection and mixed-e↵ects modeling of HIV infection dynamics” accepted for publication in the Bulletin for Mathematical Biology. </p>
+            <h4>3 Delay Di↵erential Equations: NSF Funded </h4>
+            <a href="Images\delay_differential.png"><img class="prof-image" src="Images\delay_differential.png" alt=""></a>
+            <p>In 2010, World Scientific Press published our first book on Time-Delay Systems that presented over four years of research on the analysis and control using the Lambert W Function. In conjunction with this book, we developed a web-based software that researchers and students can have access to that provides tutorials and code for solving time delay systems. This information can be found at http : //www  personal.umich.edu/ ulsoy/T DSBook.htm</p>
+            <p>A brief review is given here. Delays are inherent in many physical, biological, economic and engineering systems. My research is this area is focused on both finding solutions to these equations and finding stability manifolds, with an emphasis on developing methods that are practical and useful for others. I have two main projects in this area; one in Engineering on the study of Machine Tool Chatter and the other in HIV and HBV. In Engineering, pure delays are often used to ideally represent the e↵ects of transmission, transportation, and inertial phenomena. Delay di↵erential equations (DDEs) constitute basic mathematical models for such real phenomena. The principal diculty in studying DDEs lies in their special transcendental character. Delay problems always lead to an infinite spectrum of frequencies. Hence, they are often solved using numerical meth ods, asymptotic solutions, approximations and graphical approaches. I collaborate with Professor Galip Ulsoy, Henry Ford Professor of Mechanical Engineering. Professor Ulsoy developed a new analytic approach, based on the matrix Lambert function, for the complete solution of a system of linear constant coecient DDEs. We are applying this theory to study eigenvalue assignment, pole placement, controllability and observability, and time varying coecients. We have validated the method for stability, free and forced response, by comparison to numerical integration for selected examples. The method is applied to an engineering problem where delay is significant: regenerative chatter in a machining operation on a lathe and a biological problem: control of drug therapies. The matrix Lambert function based solution approach for DDEs is analogous to the use of the ma trix exponential for the free and forced solution of linear constant coecient ordinary di↵erential equations. Systems with multiple time delays and nonlinearities arise quite naturally in engineering and biology and yet little attention has been paid to their analyses. Our method should provide a framework for others to use in studying these complicated systems. The intellectual merit of this proposal lies in the potential development of specialized methods, based upon the proposed matrix Lambert function approach, for solutions to important problems in systems of delay di↵erential equations (e.g., observability and controllability criteria, controller and observer design, multiple delays, time-varying coecients, or nonlinearities) that would facilitate the analysis of dynamical systems characterized by such equations. The new method developed in this project will be demon strated and validated by application to significant problems in science and engineering, for example, the dynamic modeling of HIV with delay and to regenerative chatter in the milling process. 
+            </p>
+            <p>The proposed research on the analytical solution of delay di↵erential equations using the matrix Lambert function promises to be of wide interest to the mathematics, engineering and science communities. The application to HIV will be of benefit not only to researchers in related fields, but will also benefit patients under medical care. For example, the proposed method will be used to establish the best lab testing and drug therapy procedures for HIV treatment. Similarly, the chatter stability results will be of benefit to the manufacturing industry. Those results will enable manufacturers to determine the best spindle speeds and depth-of-cut for their machines for chatter-
+              free high-productivity operation.
+            </p>
+            <a href="Images\table.png"><img class="prof-image" src="Images\table.png" alt=""></a>
+            <a href="Images\HIV_results.png"><img class="prof-image" src="Images\HIV_results.png" alt=""></a>
+          </div>
+        </div>
+        <div class="primary-home-content" id="teaching-section">
+          <div class="entry-para">
+            <h1 class="welcome-heading">Teaching</h1>
+            <p>I have taught classes ranging from elementary statistics for non-math majors, basic algebra, pre-
+              calculus to dynamical systems, real analysis and advanced partial differential equations for PhD
+              students. Since my time at LTU, I have taught mostly differential equations and probability and
+              statistics, as well as math modeling, Calc I and Calc III. I have taught over 50 courses and at
+              LTU, I have taught over 25. My teaching evaluations at LTU are always in the top tier of the
+              University and range well over 4.5 out of 5.0 in all categories. I continually receive comments
+              regarding being the best teacher they have had. I have developed courses on mathematical
+              modeling and mathematical biology as well as mathematical immunology and mathematical
+              techniques for medical students. I have worked with students in psychology to create a class that
+              focused on the Mathematics of Marriage, and have worked with faculty in Engineering to write
+              books and course notes for interdisciplinary projects. I enter each class with the following
+              objectives for the course.
+            </p>
+            <ol>
+              <li>I want to convey an excitement for the subject and hopefully transfer this excitement
+                to the student.
+              </li>
+              <li>I try to educate the students how think critically and develop problem-solving
+                strategies that hopefully translate into life-long skills that can be used in everyday
+                situations.
+              </li>
+              <li>Besides teaching the obvious technical material, I want to teach the usefulness and
+                application of the subject matter. While these objectives are more suited for the
+                undergraduate, when teaching graduate level courses we can expect excitement and
+                strong problem solving skills, so one must spend more time challenging the students
+                to question and think outside of the box and eventually be able to explain the topic to
+                another student.
+              </li>
+              <li>My last objective is to train the students so that they are capable of teaching the topic
+                to another. I find that using numerous problem based learning and active
+                collaborative learning techniques play a critical role in this training.
+              </li>
+            </ol>
+            <p>I prepare my lectures in advance and in doing so am always trying to anticipate where students
+              are going to have questions and how I can help them understand the material. While I determine
+              a course syllabus before the semester starts, I usually re-evaluate where the class is every few
+              weeks to see if modifications are necessary. I treat my students with the utmost respect from first
+              year undergraduates to final year Ph.D. students. In return, I expect respect from them. I do not
+              allow for unruly behavior in a class, for students to eat in my class or to disrupt the class in
+              anyway. I also do not allow for students to be lazy with their work and will have regular
+              meetings with these students. I strive to have as much class participation as possible and even
+              like it when other students are able to answer a classmate’s question. Sometimes if a student
+              asks a question and another student wants to answer, I will let this student come up to the board
+              and present the solution. Eventually, many of the students begin to want to do this and it makes
+              for a more dynamic classroom. I am a firm believer that students need to work with their peers
+              at every level of education. I pay attention to my students and will make contact with them if I
+              feel they are beginning to slack off. I want them to succeed and sometimes it simply takes an e-
+              mail to let them know someone is concerned.
+            </p>
+            <p>I believe in teaching pen and paper analysis and using the computer for verification and
+              visualization. Rote methods are still very useful as a learning tool but this is not the only
+              methodology available. I like to give mini-quizzes, especially on topics that can be a bit more
+              confusing. These quizzes do not count towards their grade and are given in the last 15 minutes
+              of class. The difference with this method is that I pair the students up into groups and make it a
+              competition between groups. This tends to make it fun for the student while providing a critical
+              self-feedback that eventually helps the student master the topics. I expect students to work in
+              groups on specific homework problems in every class and also expect students in higher-level
+              classes to present material to the class using the blackboard. My exams are usually two fold;
+              with a written in class exam and a more challenging take home exam. This, however, is only
+              used in upper division classes. Students need to acquire the ability to write on the board and to
+              answer questions. If they can answer a question on the course material then they have obviously
+              acquired an understanding of the material.
+            </p>
+            <p>While at UM, I developed a small graduate level course on the Introduction to Mathematical
+              Techniques for Informatics and the Life Sciences. This course covers topics from Calculus III to
+              Linear Algebra to Dynamical Systems and Matlab for medical and life science students. When
+              the course was offered a second time, I had a huge waiting list for students wanting to take the
+              class. The difficulty with this class was in the student’s backgrounds, that ranged from having
+              only calculus to having some graduate level mathematics. In the end, I was able to get all
+              students in a one semester course to have some familiarity and hence comfortability with using
+              mathematics and computation in their scientific research. The more advanced students were
+              trained to use more sophisticated mathematics through projects and mentoring of the students
+              with less math background. I continue to use this technique in all classes taught at LTU where
+              each student comes in with a different background.
+            </p>
+            <p>Many of the students at LTU have arrived at their academic pursuits a bit differently then UM
+              students. What I find at LTU is a student population with tremendous talent and potential but
+              with vastly different goals for their education than at UM. Many of these students are preparing
+              for careers in industry and not academics or graduate school. This I have found presents the
+              instructor with a responsibility of making sure the students are not just book smart, but job smart.
+              This requires a unique way of teaching the courses.
+            </p>
+          </div>
+        </div>
+        <div class="primary-home-content" id="news-section">
+          <div class="entry-para">
+            <h1 class="welcome-heading">GRANTS</h1>
+            <div class="entry-content clear">
+              <div class="news-content">
+                <div>
+                  <h5 class="news-list-ele">2021</h5> 
+                </div>
+                <div>
+                  <h5 class="news-list-ele">NSF HDR DSC (Joint with UM, Wayne State, Oakland and LTU) Jagadish (PI),
+                    Nelson(Co-PI) Closing the Digital Loop with SUCCEEDS:</h5>
+                  <h5 class="">Supporting Urban
+                    Communities through Collaboration and Education in Ethical Data Science. (Reviewed
+                    extremely high but not funded. Plans to resubmit in 2022) LTU % $101,114
+                    (Brought Professor Lauren onto this project as well)</h5>
+                </div>
+                <div>
+                  <h5>LTU % $101,114</h5>
+                </div>
+              </div>
+              <div class="news-content">
+                <div>
+                  <h5 class="news-list-ele">2013 - 2016</h5> 
+                </div>
+                <div>
+                  <h5 class="news-list-ele">NIH-NIDDK Pietropaolo (PI), Nelson (Co-PI)</h5>
+                  <h5 class="">A Novel Approach Applying CGM Metrics to Identify a Pre-diabetic State
+                    Role: Co-PI with 20 % effort</h5>
+                </div>
+                <div>
+                  <h5>$450,000</h5>
+                </div>
+              </div>
+              <div class="news-content">
+                <h5 class="news-list-ele">2010 - 2015</h5>
+                <div>
+                  <h5 class="news-list-ele">NIH RO1 Pietropaolo (PI)</h5>
+                  <h5 class="">Investigating the role of new immunologic biomarkers in first degree relatives of T1DM patients
+                    with and without T1DM from the same geographical area.
+                    Role: Consultant (Modeler with 5 % effort)</h5>
+                </div>
+                <h5>$1,750,000</h5>
+              </div>
+              <div class="news-content">
+                <h5 class="news-list-ele">2006 - 2010</h5>
+                <div>
+                  <h5 class="news-list-ele">NSF CMMI-0555765 Ulsoy (PI) Nelson (Co-PI)</h5>
+                  <h5 class="">Analysis of Time-Delayed Systems via Lambert Functions</h5>
+                </div>
+                <h5>$276,300</h5>
+              </div>
+              <div class="news-content">
+                <h5 class="news-list-ele">2005 - 2012</h5>
+                <div>
+                  <h5 class="news-list-ele">NSF DMS-06-541 NSF-UBM Nelson (PI)</h5>
+                  <h5 class="">Supplying Undergraduate Biology and Mathematics Education and Research Group
+                    Experiences to Students at The University of Michigan</h5>
+                </div>
+                <h5>$945,000</h5>
+              </div>
+              <div class="news-content">
+                <h5 class="news-list-ele">2002 - 2011</h5>
+                <div>
+                  <h5 class="news-list-ele">Burroughs Welcome Career Award at the Scientific Interface</h5>
+                  <h5 class="">A Theoretical Study of HIV-1 Pathogenesis: From Primary Infection, through Latency, to
+                    Effective Drug Therapy or Progression to AIDS,</h5>
+                </div>
+                <h5>$525,000</h5>
+              </div>
+              <div class="news-content">
+                <h5 class="news-list-ele">2003 - 2004</h5>
+                <div>
+                  <h5 class="news-list-ele">Howard Hughes Bioinformatics Pilot Grant Nelson (PI)</h5>
+                  <h5 class="">Developing computational models for HIV, University of Michigan</h5>
+                </div>
+                <h5>$55,000</h5>
+              </div>
+              <div class="news-content">
+                <h5 class="news-list-ele">2001</h5>
+                <div>
+                  <h5 class="news-list-ele">University of Michigan, Rackham Fellowship</h5>
+                </div>
+                <h5>$7,000</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="primary-home-content" id="mentorship-section">
+          <h1 class="welcome-heading">Mentorship</h1>
+          <h5 class="mb-4 mt-4">Supervision of Postdoctoral Fellows</h5>
+          <ol>
+            <li dir="auto" role="none" class="mb-3"><h6>2003 – 2006 <br> David Bortz, PhD North Carolina State University</h6>
+              Current position: Professor of Mathematics, University of Colorado Boulder </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2004 – 2007 <br> David Gammack, PhD Oxford University</h6>
+              Current position - Deputy Head of School (Education), Director of Programmes at 
+              University of Southampton </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2010 – 2012 <br> Afi Rawlings, PhD University of Michigan</h6>  
+              Current position - Accelerating Data & AI Development and Diversity | Executive  
+              Director, The South Big Data Innovation Hub | CEO, The Data Career Academy 
+            </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2011 <br> Sun Yi, PhD University of Michigan</h6>
+              Current position - Professor of Mechanical Engineering, North Carolina A&T </li>
+          </ol>
+          <h5 class="mb-4 mt-4">PhD/MS Student Advisees (All at University of Michigan)</h5>
+          <ol>
+            <li dir="auto" role="none" class="mb-3"><h6> 2003 - 2005 <br>Stanca Ciupe, PhD</h6>
+              Dissertation: Development and Applications of Mathematical Tools in Models of Infectious
+              Diseases and Biological Phenomenon
+              Current position; Associate Professor of Mathematics, Virginia Tech University </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2003 – 2005 <br> Jonathan Forde, PhD</h6>
+              Dissertation: Delay Differential Equation Models in Mathematical Biology
+              Current position; Associate Professor of Mathematics and Computer Science, Hobart and
+              William Smith Colleges </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2006 – 2010 <br> Sun Yi, PhD (Co-Advisor)</h6>  
+              Dissertation: Time-Delay Systems: Analysis and Control using the Lambert W Function
+              Current position; Professor of Mechanical Engineering, North Carolina A&T 
+            </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2013 - 2015 <br> Dingsheng Li, PhD (Committee member)</h6>
+              University of Michigan, School of Public Health 
+            </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2012 – 2014 <br> James Henderson, PhD (Mentor) University of Michigan, Statistics</h6>
+              Current Position: Research Associate University of Michigan Cancer Research Center </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2010 – 2012 <br> Nick Comment, MS Bioinformatics</h6>
+              Current: Private Industry in Boston </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2008 – 2011 <br> Michael Simonov, UBM MD University of Michigan, Residency Yale University</h6>  
+              Current position: Medical Information Officer for Research, Yale University 
+            </li>
+          </ol>
+          <h5 class="mb-4 mt-4">Undergraduate Student Advisor at University of Michigan (Mentor)
+          </h5>
+          <ol>
+            <li dir="auto" role="none" class="mb-3"><h6> 2008 - 2010 <br>Noah Smith BS University of Michigan</h6>
+              Accepted into MD Program at University of Michigan </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2009 – 2011 <br> Michael Simonov BS University of Michigan</h6>
+              Accepted into MD/PhD program at University of Michigan
+              Current position: Medical Information Officer for Research, Yale University </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2009 – 2011 <br> Xiaoyu Shi BS University of Michigan</h6>  
+              Accepted into PhD program at UC San Diego 
+            </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2010 - 2011 <br> Helen Shi BS University of Michigan</h6>
+              Accepted into MD program at University of Michigan 
+            </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2010 – 2012 <br> Lo-Hua Yuan BS University of Michigan</h6>
+              Accepted into PhD program, Harvard University - Biostatistics
+              Current Position: Data Scientist Airbnb
+           </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2011 – 2013 <br> Natasha Patel-Murray BS University of Michigan </h6>
+              Accepted into PhD program, MIT - Computational Biology
+              Current position: Investigator at Novartis Institute for Biomedical Research  </li>
+            <li dir="auto" role="none" class="mb-3"><h6>2012 – 2013 <br> Chris Katanski BS University of Michigan</h6>  
+              Accepted into PhD program at University of Chicago – Computational Biologys 
+            </li>
+          </ol>
+        </div>
+        <div class="primary-home-content" id="about-me-section">
+          <div class="entry-para">
+            <h1 class="welcome-heading">About Me</h1>
+            <p>Dr. Patrick Nelson is a nationally recognized scholar and educator.  He served as Chair of the Mathematics
+              and Computer Science Department from 2016 to 2023 and, in January of 2023, became the Interim Dean of the 
+              College of Arts and Sciences. Dr. Nelson is a mathematical biologist whose area of expertise is the mathematical
+              modeling of infectious diseases and diabetes.  He has served on the Board of Directors for the Society of 
+              Mathematical Biology and continues to serve as the President of the Board for the Cornerstone Jefferson Douglas
+              Academy in Detroit.  Dr. Nelson earned his Ph.D. in Applied Mathematics from the University of Washington in 1998,
+              under the mentorship of Professor James D. Murray, and held Postdoctoral appointments at the University of Minnesota
+              and Duke University with Professor Mike Reed.  He was a tenure track faculty in the math department at the University
+              of Michigan, where he received the Burroughs Wellcome Career Award for his work on modeling HIV.  Dr.  Nelson then 
+              transitioned into a position with the University of Michigan Medical School’s Center for Computational Biology and
+              Medicine (CCBM).  The medical connection allowed his HIV research to progress to include integrating laboratory 
+              experiments with mathematical modeling.  As part of his NSF UBM award, he trained over ten undergraduates who 
+              went on to MD/Ph.D. programs or Ph.D. programs at MIT, Harvard, Michigan, and other top institutions.  He has 
+              authored or co-authored over 55 papers with over 5000 citations and has been the PI or Co-PI on numerous NIH and NSF
+              grants totaling over 2 million dollars.
+            </p>
+            <p>Before all this, Dr. Nelson earned his Bachelor of Science in Mathematics from Arizona State University, where 
+              he met his wife of 30 years, Dr. Trachette Jackson.  Dr. Jackson is a distinguished mathematics professor and the
+              Associate Vice President for Research – DEI Initiatives at the University of Michigan.  They have two amazing sons
+              who both played college baseball, Joshua at Wayne State (25) and Noah at U. Chicago (21).
+            </p>
+          </div>
+        </div>
+        <div class="secondary-content">
+            <div class="sidebar-recent-news">
+              <aside id="text-2" class=""><h5 class="side-bar-headings mb-4">RECENT NEWS</h5>			<div class="textwidget"><div class="__fb-light-mode l9j0dhe7" role="row">
+                <ol>
+                  <li class="mb-4"><h5> LIST OF DIABETES PAPER THAT PUBLISHED IN 2023</h5><a href="https://pubmed.ncbi.nlm.nih.gov/36730530/"><h5> CGM Metrics Identify Dysglycemic States in Participants From the TrialNet Pathway to Prevention Study</h5></a></li>
+                  <li class="mb-4"><h5> COVID PAPER PUBLISHED WITH MATT / BRUCE</h5><a href="https://pubmed.ncbi.nlm.nih.gov/36031987/"><h5> A data-validated temporary immunity model of COVID-19 spread in Michigan</h5></a></li>
+                  <li class="mb-4"><h5> EDUCATIONAL MAGAZINE</h5><a href="https://www.theeducationmagazine.com/dr-patrick-nelson/"><h5>  Dr. Patrick Nelson: Pioneering Transformations in Higher Education</h5></a></li>
+                </ol>
+              </aside>
+            </div>
+            <div class="sidebar-contact-me">
+              <aside id="text-4" class="widget widget_text"><h5 class="side-bar-headings mb-3">CONTACT ME</h5>			
+                <div class="textwidget"><div style="padding-bottom:40px"><h5 class="mb-2">Patrick Nelson</h5>
+                  <a href="mailto:tjacks@umich.edu"><h5>pnelson@ltu.edu</h5></a>
+                </div>
+              </aside>
+            </div>
+        </div>
+      </div>
+      <footer>						
+          <div class="site-footer">
+            Copyright © 2024 <span class="ast-footer-site-title ml-2">Patrick Nelson</span>			
+          </div>                                       
+      </footer>
+      <div class="foot-logos">
+          <a href="#">
+            <img style="float:right; margin-bottom:15px; margin-right:15px; margin-top:15px;position:relative; z-index:100; min-width: 60px;" alt="lsa logo" src="Images/Lawrence Technological University BCMM Blue-01.png" height="auto" width="12%" min-width="150px" ;="">
+          </a>
+          <a href="#"><img style="float:left; margin-bottom:15px; margin-top:15px;margin-left:15px;position:relative; z-index:100; min-width:60px;" alt="um logo" src="Images/Lawrence Technological University BCMM Blue-01.png" width="12%px"></a>
+      </div>
+
+      <script>
+          // Function to disable research section
+          function disableResearchSection() {
+            document.getElementById('research-section').style.display = 'none';
+            document.getElementById('nav-li-research').classList.remove('active')
+          }
+        
+          // Function to enable research section
+          function enableResearchSection() {
+            document.getElementById('research-section').style.display = 'block';
+            document.getElementById('nav-li-research').classList.add('active')
+          }
+
+          // Function to disable research section
+          function disableMentorshipSection() {
+            document.getElementById('mentorship-section').style.display = 'none';
+            document.getElementById('nav-li-mentorship').classList.remove('active')
+          }
+        
+          // Function to enable research section
+          function enableMentorshipSection() {
+            document.getElementById('mentorship-section').style.display = 'block';
+            document.getElementById('nav-li-mentorship').classList.add('active')
+          }
+        
+          // Function to disable home section
+          function disableHomeSection() {
+            document.getElementById('home-section').style.display = 'none';
+            document.getElementById('nav-li-home').classList.remove('active')
+          }
+        
+          // Function to enable home section
+          function enableHomeSection() {
+            document.getElementById('home-section').style.display = 'block';
+            document.getElementById('nav-li-home').classList.add('active')
+          }
+        
+          // Function to disable about me section
+          function disableAboutMeSection() {
+            document.getElementById('about-me-section').style.display = 'none';
+            document.getElementById('nav-li-about-me').classList.remove('active')
+          }
+        
+          // Function to enable about me section
+          function enableAboutMeSection() {
+            document.getElementById('about-me-section').style.display = 'block';
+            document.getElementById('nav-li-about-me').classList.add('active')
+          }
+        
+          // Function to disable news section
+          function disableNewsSection() {
+            document.getElementById('news-section').style.display = 'none';
+            document.getElementById('nav-li-news').classList.remove('active')
+          }
+        
+          // Function to enable news section
+          function enableNewsSection() {
+            document.getElementById('news-section').style.display = 'block';
+            document.getElementById('nav-li-news').classList.add('active')
+          }
+        
+          // Function to disable teaching section
+          function disableTeachingSection() {
+            document.getElementById('teaching-section').style.display = 'none';
+            document.getElementById('nav-li-teaching').classList.remove('active')
+          }
+        
+          // Function to enable teaching section
+          function enableTeachingSection() {
+            document.getElementById('teaching-section').style.display = 'block';
+            document.getElementById('nav-li-teaching').classList.add('active')
+          }
+        
+          // Hide all sections except home section
+          window.onload = function() {
+            disableResearchSection();
+            disableAboutMeSection();
+            disableNewsSection();
+            disableTeachingSection();
+            disableMentorshipSection();
+          };
+        
+          // Event listener for clicking on HOME button
+          document.getElementById('home-link').addEventListener('click', function() {
+            enableHomeSection();
+            disableResearchSection();
+            disableAboutMeSection();
+            disableNewsSection();
+            disableTeachingSection();
+            disableMentorshipSection
+          });
+        
+          // Event listener for clicking on RESEARCH button
+          document.getElementById('research-link').addEventListener('click', function() {
+            enableResearchSection();
+            disableHomeSection();
+            disableAboutMeSection();
+            disableNewsSection();
+            disableTeachingSection();
+            disableMentorshipSection();
+          });
+        
+          // Event listener for clicking on ABOUT ME button
+          document.getElementById('about-me-link').addEventListener('click', function() {
+            enableAboutMeSection();
+            disableHomeSection();
+            disableResearchSection();
+            disableNewsSection();
+            disableTeachingSection();
+            disableMentorshipSection();
+          });
+        
+          // Event listener for clicking on NEWS button
+          document.getElementById('news-link').addEventListener('click', function() {
+            enableNewsSection();
+            disableHomeSection();
+            disableResearchSection();
+            disableAboutMeSection();
+            disableTeachingSection();
+            disableMentorshipSection();
+          });
+        
+          // Event listener for clicking on TEACHING button
+          document.getElementById('teaching-link').addEventListener('click', function() {
+            enableTeachingSection();
+            disableHomeSection();
+            disableResearchSection();
+            disableAboutMeSection();
+            disableNewsSection();
+            disableMentorshipSection();
+          });
+
+          // Event listener for clicking on TEACHING button
+          document.getElementById('mentorship-link').addEventListener('click', function() {
+            enableMentorshipSection();
+            disableTeachingSection();
+            disableHomeSection();
+            disableResearchSection();
+            disableAboutMeSection();
+            disableNewsSection();
+          });
+      </script>
+        
+        
+  </body>
+</html>
